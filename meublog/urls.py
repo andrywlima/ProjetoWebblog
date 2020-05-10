@@ -22,5 +22,8 @@ from blog import views
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('ckeditor/', include('ckeditor_uploader.urls')),
-                  path('', views.home)
+                  path('', views.home),
+                  path('login/', views.login_user),
+                  path('login/submit', views.submit_login),
+                  path('logout/', views.logout_user),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
