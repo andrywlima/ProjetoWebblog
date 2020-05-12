@@ -1,2 +1,0 @@
-# ProjetoWebblog
-AV1
